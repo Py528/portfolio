@@ -1,11 +1,154 @@
-// import { ModeToggle } from "@/components/ModeToggle";
-
-import Navbar from "@/components/navbar";
+import Button96 from "@/components/button96";
+import { MapPin, SquareArrowDown } from "lucide-react";
+import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen">
-        <Navbar />
+    <div className="bg-[rgb(34,34,46)] flex justify-center min-h-screen">
+      <div className="flex flex-col w-3/5 pt-16 space-y-4">
+        {/* Header */}
+        <div>
+          <h1 className="text-4xl font-bold text-white mb-2">Pranav Shinde</h1>
+          <p className="text-gray-500 text-lg">Software Engineer</p>
+          <p className="text-gray-500 text-lg">F1 Enthusiast</p>
+        </div>
+
+        {/* Location */}
+        <div className="flex items-center space-x-2">
+          <MapPin className="text-white" />
+          <span className="text-slate-400">Pune, India</span>
+        </div>
+
+        {/* Links */}
+        <div className="flex items-center gap-2">
+          <Link
+            href="/resume 23:04.pdf"
+            download
+            className="text-white rounded-md border-2 px-3 py-1 flex items-center gap-2 text-sm"
+          >
+            <SquareArrowDown />
+            Resume
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/pranaavshinde/"
+            target="_blank"
+          >
+            <FaLinkedin className="text-white size-6" />
+          </Link>
+          <Link href="https://x.com/Pranaav2412" target="_blank">
+            <FaSquareXTwitter className="text-white size-6" />
+          </Link>
+          <Link href="https://github.com/py528" target="_blank">
+            <FaGithub className="text-white size-6" />
+          </Link>
+        </div>
+        <Button96>Click Me</Button96>
+        <Tabs defaultValue="work" className="bg-transparent">
+          <TabsList className="grid w-full grid-cols-2 bg-transparent border border-white/10">
+            <TabsTrigger
+              value="work"
+              className="data-[state=active]:bg-white/10 text-white"
+            >
+              Work
+            </TabsTrigger>
+            <TabsTrigger
+              value="education"
+              className="data-[state=active]:bg-white/10 text-white"
+            >
+              Education
+            </TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="work" className="bg-transparent">
+            <Card className="bg-transparent border-1 shadow-none pl-12 border-white/10">
+              <ol className="relative border-s border-gray-200 dark:border-gray-700">
+                <li className="mb-6 ms-6">
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-black rounded-full -start-5">
+                    <Image
+                      src="/oneqid-removebg.png"
+                      alt="OneQID Logo"
+                      width={24}
+                      height={24}
+                      className="object-contain"
+                    />
+                  </span>
+
+                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Feb 2025 - April 2025
+                  </time>
+                  <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+                    Oneqid Technologies Private Limited
+                    <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300 ms-3">
+                      Latest
+                    </span>
+                  </h3>
+                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Data Engineer Intern
+                  </p>
+                </li>
+              </ol>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="education" className="bg-transparent">
+            <Card className="bg-transparent border-1 shadow-none pl-12 border-white/10">
+              <ol className="relative border-s border-gray-200 dark:border-gray-700">
+                <li className="mb-6 ms-6">
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-white rounded-full -start-5">
+                    <Image
+                      src="/mmcoe-removebg.png"
+                      alt="OneQID Logo"
+                      width={24}
+                      height={24}
+                      className="object-contain"
+                    />
+                  </span>
+
+                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    June 2023 - Present
+                  </time>
+                  <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+                    Marathwada Mitra Mandal&apos;s College of Engineering
+                    &#40;MMCOE&#41;
+                    <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300 ms-3">
+                      Latest
+                    </span>
+                  </h3>
+                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Artificial Engineering & Data Science
+                  </p>
+                </li>
+                <li className="mb-6 ms-6">
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-white rounded-full -start-5">
+                    <Image
+                      src="/bvjniot-removebg.png"
+                      alt="OneQID Logo"
+                      width={40}
+                      height={40}
+                      className="object-contain"
+                    />
+                  </span>
+
+                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    June 2020 - June 2023
+                  </time>
+                  <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+                    Bharati Vidyapeeth Deemed University &#40;BVJNIOT&#41;
+                  </h3>
+                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Computer Technology
+                  </p>
+                </li>
+              </ol>
+            </Card>
+          </TabsContent>
+        </Tabs>
+      </div>
     </div>
   );
 }
