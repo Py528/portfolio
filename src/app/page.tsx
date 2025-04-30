@@ -47,22 +47,23 @@ export default function Home() {
             <FaGithub className="text-white size-6" />
           </Link>
         </div>
-        <Button96>Click Me</Button96>
+        <Button96>Get to the fun side</Button96>
         <Tabs defaultValue="work" className="bg-transparent">
-          <TabsList className="grid w-full grid-cols-2 bg-transparent border border-white/10">
-            <TabsTrigger
-              value="work"
-              className="data-[state=active]:bg-white/10 text-white"
-            >
-              Work
-            </TabsTrigger>
-            <TabsTrigger
-              value="education"
-              className="data-[state=active]:bg-white/10 text-white"
-            >
-              Education
-            </TabsTrigger>
-          </TabsList>
+        <TabsList className="grid w-full grid-cols-2 bg-transparent border border-white/10">
+  <TabsTrigger
+    value="work"
+    className="!text-white data-[state=active]:bg-white/10 data-[state=active]:!text-white"
+  >
+    Work
+  </TabsTrigger>
+  <TabsTrigger
+    value="education"
+    className="!text-white data-[state=active]:bg-white/10 data-[state=active]:!text-white"
+  >
+    Education
+  </TabsTrigger>
+</TabsList>
+
 
           <TabsContent value="work" className="bg-transparent">
             <Card className="bg-transparent border-1 shadow-none pl-12 border-white/10">
@@ -148,6 +149,54 @@ export default function Home() {
             </Card>
           </TabsContent>
         </Tabs>
+        <div className="text-xl text-white">Skills</div>
+        <div className="flex flex-wrap gap-1 text-white">
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/8">
+            JavaScript
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+            TypeScript
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+            Python
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+            ReactJS
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+            NextJS
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+          PostgreSQL
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+            Tensorflow
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+            Kafka
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+            Java
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+            Scala
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+          Apache Spark
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+          AWS
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+          Apache Spark
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+          Spring Boot
+          </span>
+          <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+          Machine Learning
+          </span>
+        </div>
       </div>
     </div>
   );
