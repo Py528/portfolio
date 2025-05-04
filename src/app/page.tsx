@@ -1,3 +1,4 @@
+"use client";
 import Button96 from "@/components/button96";
 import { MapPin, MoveRight, SquareArrowDown } from "lucide-react";
 import Link from "next/link";
@@ -6,15 +7,37 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
+import React from "react";
+
+// Modified GridBackground component to match your dark theme
+export function CustomGridBackground() {
+  return (
+    <div className="relative flex h-full w-full items-center justify-center bg-[#030303]">
+      <div
+        className={cn(
+          "absolute inset-0 opacity-60",
+          "[background-size:40px_40px]",
+          "[background-image:linear-gradient(to_right,rgba(255,255,255,0.2)_1px,transparent_2px),linear-gradient(to_bottom,rgba(255,255,255,0.2)_1px,transparent_1px)]"
+        )}
+      />
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#030303] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(34,34,46)] flex justify-center min-h-screen">
-      <div className="flex flex-col w-3/5 pt-16 space-y-4">
+    <div className="bg-black flex justify-center min-h-screen relative">
+      <div className="absolute inset-0 z-0">
+        <CustomGridBackground />
+      </div>
+      <div className="flex flex-col w-full sm:w-4/5 md:w-3/4 lg:w-3/5 xl:w-3/5 px-8 pt-16 sm:py-20 lg:py-40 lg:pt-20 mx-auto h-full max-w-3xl space-y-4 relative z-10">
         <div>
           <h1 className="text-4xl font-bold text-white mb-2">Pranav Shinde</h1>
           <p className="text-gray-500 text-lg">Software Engineer</p>
-          <p className="text-gray-500 text-lg">F1 Enthusiast</p>
+          <p className="text-gray-500 text-lg">3D Enthusiast</p>
         </div>
 
         <div className="flex items-center space-x-2">
@@ -46,23 +69,29 @@ export default function Home() {
           </Link>
         </div>
         <Button96>Get to the fun side</Button96>
-        <Tabs defaultValue="work" className="bg-transparent">
-          <TabsList className="grid w-full grid-cols-2 bg-transparent border border-white/10">
+        <Tabs
+          defaultValue="work"
+          className="bg-transparent backdrop-brightness-50"
+        >
+          <TabsList className="grid w-full grid-cols-2 bg-transparent border border-white/20">
             <TabsTrigger
               value="work"
-              className="!text-white data-[state=active]:bg-white/10 data-[state=active]:!text-white"
+              className="!text-white data-[state=active]:bg-white/90 data-[state=active]:!text-white"
             >
               Work
             </TabsTrigger>
             <TabsTrigger
               value="education"
-              className="!text-white data-[state=active]:bg-white/10 data-[state=active]:!text-white"
+              className="!text-white data-[state=active]:bg-white/90 data-[state=active]:!text-white"
             >
               Education
             </TabsTrigger>
           </TabsList>
-          <TabsContent value="work" className="bg-transparent">
-            <Card className="bg-transparent border-1 shadow-none pl-12 border-white/10">
+          <TabsContent
+            value="work"
+            className="bg-transparent backdrop-brightness-50"
+          >
+            <Card className="bg-transparent border-1 shadow-none pl-12 border-white/20">
               <ol className="relative border-s border-gray-200 dark:border-gray-700">
                 <li className="mb-6 ms-6">
                   <span className="absolute flex items-center justify-center w-10 h-10 bg-black rounded-full -start-5">
@@ -80,9 +109,6 @@ export default function Home() {
                   </time>
                   <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
                     Oneqid Technologies Private Limited
-                    <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300 ms-3">
-                      Latest
-                    </span>
                   </h3>
                   <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                     Data Engineer Intern
@@ -92,8 +118,11 @@ export default function Home() {
             </Card>
           </TabsContent>
 
-          <TabsContent value="education" className="bg-transparent">
-            <Card className="bg-transparent border-1 shadow-none pl-12 border-white/10">
+          <TabsContent
+            value="education"
+            className="bg-transparent backdrop-brightness-50"
+          >
+            <Card className="bg-transparent border-1 shadow-none pl-12 border-white/20">
               <ol className="relative border-s border-gray-200 dark:border-gray-700">
                 <li className="mb-6 ms-6">
                   <span className="absolute flex items-center justify-center w-10 h-10 bg-white rounded-full -start-5">
@@ -112,9 +141,6 @@ export default function Home() {
                   <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
                     Marathwada Mitra Mandal&apos;s College of Engineering
                     &#40;MMCOE&#41;
-                    <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300 ms-3">
-                      Latest
-                    </span>
                   </h3>
                   <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                     Artificial Engineering & Data Science
@@ -146,8 +172,10 @@ export default function Home() {
           </TabsContent>
         </Tabs>
         <div className="skills">
-          <div className="text-xl text-white">Skills</div>
-          <div className="flex flex-wrap gap-1 text-white">
+          <div className="text-xl text-white backdrop-brightness-50">
+            Skills
+          </div>
+          <div className="flex flex-wrap gap-1 text-white backdrop-brightness-50">
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/8">
               JavaScript
             </span>
@@ -195,9 +223,9 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="projects flex flex-col gap-4 pb-4">
+        <div className="projects flex flex-col gap-4 pb-4 backdrop-brightness-50">
           <div className="text-xl text-white">Projects</div>
-          <div className="skilllearn flex flex-col gap-3 p-4 rounded-xl border border-white/10 bg-transparent text-white">
+          <div className="skilllearn flex flex-col gap-3 p-4 rounded-xl border border-white/20 bg-transparent backdrop-brightness-50 text-white">
             {/* <video
               src="/sample.mp4"
               autoPlay
@@ -246,7 +274,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="tunesync flex flex-col gap-3 p-4 rounded-xl border border-white/10 bg-transparent text-white">
+          <div className="tunesync flex flex-col gap-3 p-4 rounded-xl border border-white/20 bg-transparent backdrop-brightness-50 text-white">
             <Image
               src="/tunesync.png"
               alt="TuneSync"
@@ -284,8 +312,9 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="more-projects flex gap-3 p-4 rounded-xl border border-white/10 bg-transparent text-white">
-            More Projects<MoveRight />
+          <div className="more-projects flex gap-3 p-4 rounded-xl border border-white/2 0 bg-transparent text-white">
+            More Projects
+            <MoveRight />
           </div>
         </div>
       </div>
