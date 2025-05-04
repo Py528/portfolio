@@ -7,25 +7,8 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 import React from "react";
-
-// Modified GridBackground component to match your dark theme
-export function CustomGridBackground() {
-  return (
-    <div className="relative flex h-full w-full items-center justify-center bg-[#030303]">
-      <div
-        className={cn(
-          "absolute inset-0 opacity-60",
-          "[background-size:40px_40px]",
-          "[background-image:linear-gradient(to_right,rgba(255,255,255,0.2)_1px,transparent_2px),linear-gradient(to_bottom,rgba(255,255,255,0.2)_1px,transparent_1px)]"
-        )}
-      />
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#030303] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-    </div>
-  );
-}
+import CustomGridBackground from "@/components/CustomGridBackground";
 
 export default function Home() {
   return (
@@ -175,8 +158,8 @@ export default function Home() {
           <div className="text-xl text-white backdrop-brightness-50">
             Skills
           </div>
-          <div className="flex flex-wrap gap-1 text-white backdrop-brightness-50">
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/8">
+          <div className="flex flex-wrap gap-1 text-white backdrop-brightness-10">
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
               JavaScript
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
