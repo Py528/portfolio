@@ -31,7 +31,7 @@ export default function Home() {
         {/* Links */}
         <div className="flex items-center gap-2">
           <Link
-            href="/resume 23:04.pdf"
+            href="/resume 04:05.pdf"
             download
             className="text-white rounded-md border-2 px-3 py-1 flex items-center gap-2 text-sm"
           >
@@ -218,7 +218,7 @@ export default function Home() {
               className="rounded-lg w-full aspect-video object-cover"
             /> */}
             <Image
-              src="/skilllearn.png"
+              src="/skilllearn2.png"
               alt="Skill Learn"
               width={1280}
               height={720}
