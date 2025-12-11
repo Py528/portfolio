@@ -19,8 +19,7 @@ export default function Home() {
       <div className="flex flex-col w-full sm:w-4/5 md:w-3/4 lg:w-3/5 xl:w-3/5 px-8 pt-16 sm:py-20 lg:py-40 lg:pt-20 mx-auto h-full max-w-3xl space-y-4 relative z-10">
         <div>
           <h1 className="text-4xl font-bold text-white mb-2">Pranav Shinde</h1>
-          <p className="text-gray-500 text-lg">Software Engineer</p>
-          <p className="text-gray-500 text-lg">3D Enthusiast</p>
+          <p className="text-gray-500 text-lg">Cloud & DevOps Engineer</p>
         </div>
 
         <div className="flex items-center space-x-2">
@@ -31,7 +30,7 @@ export default function Home() {
         {/* Links */}
         <div className="flex items-center gap-2">
           <Link
-            href="/resume 04:05.pdf"
+            href="/shindepranav.pdf"
             download
             className="text-white rounded-md border-2 px-3 py-1 flex items-center gap-2 text-sm"
           >
@@ -78,6 +77,22 @@ export default function Home() {
               <ol className="relative border-s border-gray-200 dark:border-gray-700">
                 <li className="mb-6 ms-6">
                   <span className="absolute flex items-center justify-center w-10 h-10 bg-black rounded-full -start-5">
+                    <div className="w-6 h-6 bg-white rounded-full"></div>
+                  </span>
+
+                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Jan 2025 - Apr 2025
+                  </time>
+                  <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+                    Vital Vistara
+                  </h3>
+                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Full Stack Development Intern
+                  </p>
+                  <ul className="text-sm text-gray-400 dark:text-gray-500 list-disc list-inside space-y-1"> <li>Deployed scalable, cloud-native applications on AWS, achieving 99.9% availability.</li> <li>Architected microservices using Docker and Kubernetes for robust system performance.</li> <li>Automated CI/CD pipelines (GitHub Actions, AWS CodePipeline), cutting deployment time by 40%.</li> </ul>
+                </li>
+                <li className="mb-6 ms-6">
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-black rounded-full -start-5">
                     <Image
                       src="/oneqid-removebg.png"
                       alt="OneQID Logo"
@@ -88,14 +103,15 @@ export default function Home() {
                   </span>
 
                   <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    Feb 2025 - April 2025
+                    Jun 2024 - Aug 2024
                   </time>
                   <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
-                    Oneqid Technologies Private Limited
+                    Oneqid Technologies, IIT Delhi Research and Innovation Park
                   </h3>
                   <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                    Data Engineer Intern
+                    Web Development Intern
                   </p>
+                  <ul className="text-sm text-gray-400 dark:text-gray-500 list-disc list-inside space-y-1"> <li>Migrated legacy infrastructure to Next.js, resulting in a 35% increase in page load performance.</li> <li>Implemented automated Vercel deployment workflows, boosting Lighthouse performance scores from 65 to 92.</li> </ul>
                 </li>
               </ol>
             </Card>
@@ -119,14 +135,14 @@ export default function Home() {
                   </span>
 
                   <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    June 2023 - Present
+                    2023 - Present
                   </time>
                   <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
                     Marathwada Mitra Mandal&apos;s College of Engineering
                     &#40;MMCOE&#41;
                   </h3>
                   <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                    Artificial Engineering & Data Science
+                    B.E. in AI and Data Science
                   </p>
                 </li>
                 <li className="mb-6 ms-6">
@@ -141,13 +157,13 @@ export default function Home() {
                   </span>
 
                   <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    June 2020 - June 2023
+                    2020 - 2023
                   </time>
                   <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
                     Bharati Vidyapeeth Deemed University &#40;BVJNIOT&#41;
                   </h3>
                   <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                    Computer Technology
+                    Diploma in Computer Technology
                   </p>
                 </li>
               </ol>
@@ -160,49 +176,64 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap gap-1 text-white backdrop-brightness-10">
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              JavaScript
+              AWS
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              Azure
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              GCP
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              Kubernetes
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              Docker
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              Terraform
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              GitHub Actions
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              AWS CodePipeline
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              CloudFormation
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
               TypeScript
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              Node.js
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              Next.js
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              Kotlin
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
               Python
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              ReactJS
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              NextJS
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
               PostgreSQL
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Tensorflow
+              MongoDB
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Kafka
+              Firebase
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Java
+              Supabase
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Scala
+              Linux
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Apache Spark
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              AWS
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Apache Spark
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Spring Boot
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Machine Learning
+              Bash
             </span>
           </div>
         </div>
@@ -218,35 +249,30 @@ export default function Home() {
               className="rounded-lg w-full aspect-video object-cover"
             /> */}
             <Image
-              src="/skilllearn2.png"
+              src="/skill learn ui.png"
               alt="Skill Learn"
               width={1280}
               height={720}
               className="rounded-lg w-full object-cover"
             />
 
-            <div className="text-base font-semibold">Skill Learn</div>
+            <div className="text-base font-semibold">Skill Learn - Interactive Learning Platform</div>
+            <p className="text-xs opacity-50">Sep 2024 - Present</p>
 
             <p className="text-xs opacity-70 leading-relaxed">
-              A micro-course platform for project-based learning and verifiable
-              credential issuance.
+              Full Stack Developer | Architected secure course media storage using AWS S3 with strict IAM policies. 
+              Engineered Docker-based execution service for sandboxed code execution. Deployed scalable backend using 
+              Supabase (PostgreSQL) and TypeScript.
             </p>
 
             <div className="technologies flex flex-wrap gap-1 text-[10px]">
               {[
                 "Next.js",
-                "TailwindCSS",
-                "NextAuth.js",
-                "Framer Motion",
-                "Redux Toolkit",
-                "Spring Boot",
-                "OAuth2",
-                "JWT",
+                "TypeScript",
                 "AWS S3",
-                "Kafka",
                 "Docker",
-                "Heroku",
-                "GitHub Actions",
+                "Supabase",
+                "PostgreSQL",
               ].map((tech) => (
                 <span
                   key={tech}
@@ -257,34 +283,46 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="tunesync flex flex-col gap-3 p-4 rounded-xl border border-white/20 bg-transparent backdrop-brightness-50 text-white">
-            <Image
-              src="/tunesync.png"
-              alt="TuneSync"
-              width={1280}
-              height={720}
-              className="rounded-lg w-full object-cover"
-            />
+          <div className="athlete-connect flex flex-col gap-3 p-4 rounded-xl border border-white/20 bg-transparent backdrop-brightness-50 text-white">
+            <div className="w-full grid grid-cols-3 gap-2">
+              <Image
+                src="/athlete connect main dashboard.jpeg"
+                alt="Athlete Connect Main Dashboard"
+                width={400}
+                height={600}
+                className="rounded-lg w-full h-80 object-contain"
+              />
+              <Image
+                src="/athelete connect test dashboard.jpeg"
+                alt="Athlete Connect Test Dashboard"
+                width={400}
+                height={600}
+                className="rounded-lg w-full h-80 object-contain"
+              />
+              <Image
+                src="/posedetection.jpeg"
+                alt="Pose Detection"
+                width={400}
+                height={600}
+                className="rounded-lg w-full h-80 object-contain"
+              />
+            </div>
 
-            <div className="text-base font-semibold">TuneSync</div>
+            <div className="text-base font-semibold">Athlete Connect - AI Sports Talent Assessment</div>
+            <p className="text-xs opacity-50">Aug 2024 - Oct 2024</p>
 
             <p className="text-xs opacity-70 leading-relaxed">
-              Real-time music insights platform with Kafka & Spark pipelines, ML
-              recommendations, and BI dashboards via Grafana & Tableau.
+              Backend & Cloud Engineer | Implemented real-time data synchronization and secure authentication using Firebase, 
+              supporting high-concurrency usage. Optimized backend logic for AI-powered fitness assessments. 
+              Top 10 National Finalist, Smart India Hackathon.
             </p>
 
             <div className="technologies flex flex-wrap gap-1 text-[10px]">
               {[
-                "Kafka",
-                "Apache Spark",
-                "Python",
-                "Scikit-learn",
-                "AWS S3",
-                "AWS Lambda",
-                "AWS Redshift",
-                "Grafana",
-                "Tableau",
-                "Docker",
+                "Firebase",
+                "Kotlin",
+                "ML Kit",
+                "Real-time DB",
               ].map((tech) => (
                 <span
                   key={tech}
