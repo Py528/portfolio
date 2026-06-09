@@ -19,7 +19,7 @@ export default function Home() {
       <div className="flex flex-col w-full sm:w-4/5 md:w-3/4 lg:w-3/5 xl:w-3/5 px-8 pt-16 sm:py-20 lg:py-40 lg:pt-20 mx-auto h-full max-w-3xl space-y-4 relative z-10">
         <div>
           <h1 className="text-4xl font-bold text-white mb-2">Pranav Shinde</h1>
-          <p className="text-gray-500 text-lg">Cloud & DevOps Engineer</p>
+          <p className="text-gray-500 text-lg">Computer Vision Engineer | ML Systems & MLOps</p>
         </div>
 
         <div className="flex items-center space-x-2">
@@ -30,7 +30,7 @@ export default function Home() {
         {/* Links */}
         <div className="flex items-center gap-2">
           <Link
-            href="/shindepranav.pdf"
+            href="/Badawe International Pranav.pdf"
             download
             className="text-white rounded-md border-2 px-3 py-1 flex items-center gap-2 text-sm"
           >
@@ -81,15 +81,41 @@ export default function Home() {
                   </span>
 
                   <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Jan 2026 - Present
+                  </time>
+                  <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+                    Badawe Engineers (Govt. Affiliated Defence R&D)
+                  </h3>
+                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    AI Engineer - Computer Vision & ML Systems
+                  </p>
+                  <ul className="text-sm text-gray-400 dark:text-gray-500 list-disc list-inside space-y-1">
+                    <li>Built and maintained 500k+ image annotation pipeline with custom SAM 2.1 boundary refiner for automated mask correction.</li>
+                    <li>Trained 13-class YOLO instance segmentation model (mAP50~0.74) with WeightedDetectionLoss for severe dataset imbalance.</li>
+                    <li>Engineered dual-GPU training pipeline (RTX 5080/3060) resolving CUDA conflicts, reducing validation turnaround by 18%.</li>
+                    <li>Migrated inference PyTorch → ONNX with batch processing, achieving 78% memory reduction (9.2GB → 2GB).</li>
+                    <li>Automated full annotation workflow via CVAT REST API, replacing hours of daily manual effort.</li>
+                  </ul>
+                </li>
+                <li className="mb-6 ms-6">
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-black rounded-full -start-5">
+                    <div className="w-6 h-6 bg-white rounded-full"></div>
+                  </span>
+
+                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                     Jan 2025 - Apr 2025
                   </time>
                   <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
                     Vital Vistara
                   </h3>
                   <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                    Full Stack Development Intern
+                    Full Stack Intern (ML Backend)
                   </p>
-                  <ul className="text-sm text-gray-400 dark:text-gray-500 list-disc list-inside space-y-1"> <li>Deployed scalable, cloud-native applications on AWS, achieving 99.9% availability.</li> <li>Architected microservices using Docker and Kubernetes for robust system performance.</li> <li>Automated CI/CD pipelines (GitHub Actions, AWS CodePipeline), cutting deployment time by 40%.</li> </ul>
+                  <ul className="text-sm text-gray-400 dark:text-gray-500 list-disc list-inside space-y-1">
+                    <li>Designed AWS infrastructure for ML workloads: VPC, RDS, Lambda for serverless inference, S3 for artifacts.</li>
+                    <li>Implemented CI/CD with Docker builds, ECR/ECS Fargate deployment, and automated ML model versioning.</li>
+                    <li>Deployed scalable, cloud-native applications on AWS, achieving 99.9% availability.</li>
+                  </ul>
                 </li>
                 <li className="mb-6 ms-6">
                   <span className="absolute flex items-center justify-center w-10 h-10 bg-black rounded-full -start-5">
@@ -135,7 +161,7 @@ export default function Home() {
                   </span>
 
                   <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    2023 - Present
+                    2023 - May 2026
                   </time>
                   <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
                     Marathwada Mitra Mandal&apos;s College of Engineering
@@ -176,31 +202,43 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap gap-1 text-white backdrop-brightness-10">
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              AWS
+              PyTorch
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Azure
+              YOLO (v8/v11, detection + segmentation)
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              GCP
+              SAM 2.1
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Kubernetes
+              ONNX
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              OpenCV
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              Object Tracking (ByteTrack, BoT-SORT)
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              CVAT (REST API automation)
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              Custom Loss Functions
+            </span>
+            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
+              Multi-GPU Training
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
               Docker
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Terraform
+              Kubernetes
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              GitHub Actions
+              AWS (EC2, Lambda, RDS, S3)
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              AWS CodePipeline
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              CloudFormation
+              Python
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
               TypeScript
@@ -209,31 +247,19 @@ export default function Home() {
               Node.js
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Next.js
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Kotlin
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Python
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
               PostgreSQL
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              MongoDB
+              Redis
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Firebase
+              LangChain & RAG
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Supabase
+              Linux & Bash
             </span>
             <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Linux
-            </span>
-            <span className="px-3 py-1 rounded-sm text-sm border border-white/10 bg-white/10">
-              Bash
+              CI/CD & MLOps
             </span>
           </div>
         </div>
@@ -256,13 +282,13 @@ export default function Home() {
               className="rounded-lg w-full object-cover"
             />
 
-            <div className="text-base font-semibold">Skill Learn - Interactive Learning Platform</div>
-            <p className="text-xs opacity-50">Sep 2024 - Present</p>
+            <div className="text-base font-semibold">Skill Learn - Sandboxed Code Execution Platform</div>
+            <p className="text-xs opacity-50">Sep 2024 - 12/2024</p>
 
             <p className="text-xs opacity-70 leading-relaxed">
-              Full Stack Developer | Architected secure course media storage using AWS S3 with strict IAM policies. 
-              Engineered Docker-based execution service for sandboxed code execution. Deployed scalable backend using 
-              Supabase (PostgreSQL) and TypeScript.
+              Full Stack Engineer | Engineered secure sandboxed code execution using Docker with CPU/memory limits on AWS ECS Fargate.
+              Implemented PostgreSQL connection pooling (PgBouncer), reducing connection overhead by 70%. Built scalable backend for
+              supporting 1000+ concurrent users with strict security isolation.
             </p>
 
             <div className="technologies flex flex-wrap gap-1 text-[10px]">
@@ -284,7 +310,7 @@ export default function Home() {
             </div>
           </div>
           <div className="athlete-connect flex flex-col gap-3 p-4 rounded-xl border border-white/20 bg-transparent backdrop-brightness-50 text-white">
-            <div className="w-full grid grid-cols-3 gap-2">
+            <div className="w-full grid grid-cols-3">
               <Image
                 src="/athlete connect main dashboard.jpeg"
                 alt="Athlete Connect Main Dashboard"
@@ -309,12 +335,11 @@ export default function Home() {
             </div>
 
             <div className="text-base font-semibold">Athlete Connect - AI Sports Talent Assessment</div>
-            <p className="text-xs opacity-50">Aug 2024 - Oct 2024</p>
+            <p className="text-xs opacity-50">Aug 2024 - Oct 2024 • Top 10 National Finalist, Smart India Hackathon 2024</p>
 
             <p className="text-xs opacity-70 leading-relaxed">
-              Backend & Cloud Engineer | Implemented real-time data synchronization and secure authentication using Firebase, 
-              supporting high-concurrency usage. Optimized backend logic for AI-powered fitness assessments. 
-              Top 10 National Finalist, Smart India Hackathon.
+              Backend & ML Engineer | Deployed on-device pose estimation (Google ML Kit) on Android for low-latency, privacy-preserving fitness evaluation.
+              Engineered Firebase-backed pipeline for nationwide athlete profiling and leaderboards supporting 50,000+ competing teams nationally.
             </p>
 
             <div className="technologies flex flex-wrap gap-1 text-[10px]">
@@ -333,10 +358,10 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="more-projects flex gap-3 p-4 rounded-xl border border-white/2 0 bg-transparent text-white">
+          <Link href="/projects" className="more-projects flex gap-3 p-4 rounded-xl border border-white/20 bg-transparent text-white hover:bg-white/5 transition-colors cursor-pointer">
             More Projects
             <MoveRight />
-          </div>
+          </Link>
         </div>
       </div>
     </div>
