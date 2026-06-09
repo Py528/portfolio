@@ -77,14 +77,20 @@ export default function Home() {
               <ol className="relative border-s border-gray-200 dark:border-gray-700">
                 <li className="mb-6 ms-6">
                   <span className="absolute flex items-center justify-center w-10 h-10 bg-black rounded-full -start-5">
-                    <div className="w-6 h-6 bg-white rounded-full"></div>
+                    <Image
+                      src="/bepl.png"
+                      alt="Badawe Logo"
+                      width={24}
+                      height={24}
+                      className="object-contain"
+                    />
                   </span>
 
                   <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                     Jan 2026 - Present
                   </time>
                   <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
-                    Badawe Engineers (Govt. Affiliated Defence R&D)
+                    Badawe Engineers (Defence R&D)
                   </h3>
                   <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                     AI Engineer - Computer Vision & ML Systems
