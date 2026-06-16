@@ -319,7 +319,7 @@ export default function Home() {
               className="rounded-lg w-full aspect-video object-cover"
             /> */}
             <Image
-              src="/skill learn ui.png"
+              src="/skill_learn_ui.png"
               alt="Skill Learn"
               width={1280}
               height={720}
