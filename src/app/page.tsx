@@ -271,6 +271,44 @@ export default function Home() {
         </div>
         <div className="projects flex flex-col gap-4 pb-4 backdrop-brightness-50">
           <div className="text-xl text-white">Projects</div>
+          <div className="appgraph flex flex-col gap-3 p-4 rounded-xl border border-white/20 bg-transparent backdrop-brightness-50 text-white">
+            <Image
+              src="/app_builder_graph.png"
+              alt="App Graph Builder"
+              width={1280}
+              height={720}
+              className="rounded-lg w-full object-cover"
+            />
+
+            <div className="text-base font-semibold">App Graph Builder - Interactive Node Workspace Dashboard</div>
+            <p className="text-xs opacity-50">2026</p>
+
+            <p className="text-xs opacity-70 leading-relaxed">
+              Frontend Engineer | Engineered a high-performance interactive node graph workspace using React Flow 12 for dynamic node rendering and connection edges.
+              Managed complex UI state and cache synchronization using Zustand and TanStack React Query, backed by a mock service layer (MSW) for API simulation.
+              Designed a pixel-perfect, theme-reactive UI with interactive resource sliders and custom color-coded status badges utilizing Tailwind CSS.
+            </p>
+
+            <div className="technologies flex flex-wrap gap-1 text-[10px]">
+              {[
+                "React 19",
+                "TypeScript",
+                "React Flow",
+                "Zustand",
+                "TanStack Query",
+                "Tailwind CSS",
+                "Vite",
+                "MSW",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-2 py-1 rounded-sm bg-white/10 border border-white/10 text-[8px]"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
           <div className="skilllearn flex flex-col gap-3 p-4 rounded-xl border border-white/20 bg-transparent backdrop-brightness-50 text-white">
             {/* <video
               src="/sample.mp4"
